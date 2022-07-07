@@ -31,7 +31,7 @@ export default function Home( { articles } ) {
         <Row>
           {articles.map ((article)=>{
             return (
-                    <Col xs={12} sm>
+                    <Col xs={12} md={4}>
                       <div>
                         <PrimaryCard 
                         cardImageLocation={'/honda_side_profjpg.jpg'} 

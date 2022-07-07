@@ -120,6 +120,14 @@
 .theCard {
   width: 425px;
 }
+.navigationBar {
+  background-color: #ff6b6b;
+}
+
+.navigationBarDropdownItem {
+  background-color: #ff6b6b;
+}
+
 
 @media (max-width: 600px) {
   .grid {
@@ -127,6 +135,8 @@
     flex-direction: column;
   }
 }
+
+
 
 
 
