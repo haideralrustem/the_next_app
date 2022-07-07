@@ -4,6 +4,13 @@ import styles from '../styles/Home.module.css'
 
 import PrimaryCard from '../components/PrimaryCard'
 
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+
+
+
 export default function Home( { articles } ) {
   console.log(articles)
   return (
@@ -18,18 +25,29 @@ export default function Home( { articles } ) {
 
         <h1>Welcome</h1>
 
-        {articles.map ((article)=>{
-          return (<div>
-                  
-                  <PrimaryCard
-                  cardImageLocation={'/honda_side_profjpg.jpg'} 
-                  cardHeader={article.title}
-                  cardMeta={article.id}
-                  cardDescription={article.body}
 
-                  />
-                  </div>)
-        })}
+        <Container>
+
+        <Row>
+          {articles.map ((article)=>{
+            return (
+                    <Col xs={12} sm>
+                      <div>
+                        <PrimaryCard 
+                        cardImageLocation={'/honda_side_profjpg.jpg'} 
+                        cardHeader={article.title}
+                        cardMeta={article.id}
+                        cardDescription={article.body}
+                        />
+
+                      </div>
+                    </Col>
+                    )
+          })}
+
+        </Row>
+        </Container>
+        
       </div>
 
 

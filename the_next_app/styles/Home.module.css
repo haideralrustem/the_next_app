@@ -2,6 +2,12 @@
   padding: 0 2rem;
 }
 
+.flexContainer {
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -111,12 +117,29 @@
 
 /* ----------------  My styles :  ---------------- */
 
-
-
+.theCard {
+  width: 425px;
+}
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+
+
+/* xs */
+@media screen and (min-width: 0px) {
+  .theCard {
+    width: 425px;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 576px) {
+  .theCard {
+    width: auto;
   }
 }
